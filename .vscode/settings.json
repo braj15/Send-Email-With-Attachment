@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "E:\\Programming\\Python\\Projects\\Email_firstProject\\Scripts\\python.exe",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "python.autoComplete.addBrackets": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true
+}
