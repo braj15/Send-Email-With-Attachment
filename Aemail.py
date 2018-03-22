@@ -8,21 +8,21 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 
-email_user = 'braj1902@gmail.com'
-email_password = 'thed@mnmailer123'
-email_rcver = 'braj95644@gmail.com'
+email_user = 'sender@gmail.com'
+email_password = 'put your password here'
+email_rcver = 'receiver@gmail.com'
 
-subject = 'Python is cool!'
+subject = 'put your sub here'
 
 msg = MIMEMultipart()
 msg['From'] = email_user
 msg['To'] = email_rcver
 msg['Subject'] = subject
 
-body = "Hi there, I'm sending this email using python! Pretty coool, huh!!!"
+body = "write down body of the email here"
 msg.attach(MIMEText(body, 'plain'))
 
-filename = 'YAY.gif'
+filename = 'filepath'
 attachment = open(filename, 'rb')
 
 part = MIMEBase('application', 'octet-stream')
