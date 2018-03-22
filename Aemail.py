@@ -5,21 +5,21 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 
-email_user = 'sender@gmail.com'
-email_password = 'put your password here'
-email_rcver = 'receiver@gmail.com'
+email_user = input("what is your gmail address? \n ")
+email_password = input("what is the password for that email address? \n  ")
+email_rcver = input("what email address do you want to send to? \n ")
 
-subject = 'put your sub here'
+subject = input("Subject of the email : \n ")
 
 msg = MIMEMultipart()
 msg['From'] = email_user
 msg['To'] = email_rcver
 msg['Subject'] = subject
 
-body = "write down body of the email here"
+body = input("write down body of the email : \n ")
 msg.attach(MIMEText(body, 'plain'))
 
-filename = 'filepath'
+filename = input("Enter filepath of the file you want to upload : \n ")
 attachment = open(filename, 'rb')
 
 part = MIMEBase('application', 'octet-stream')
